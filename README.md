@@ -1,4 +1,4 @@
-# Attackontitanapi
+# Evilinsult
 api for evilinsult.com site for getting evil insult
 # main
 ```cpp
