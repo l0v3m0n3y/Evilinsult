@@ -8,10 +8,10 @@ api for evilinsult.com site for getting evil insult
 int main() {
    Evilinsult api;
 
-    auto prizes = api.generate_insult("en").then([](json::value result) {
+    auto insult= api.generate_insult("en").then([](json::value result) {
         std::cout << "Search results: " << result.serialize() << std::endl;
     });
-    prizes.wait();
+    insult.wait();
     
     return 0;
 }
